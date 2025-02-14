@@ -1,14 +1,14 @@
+package Classes;
+
+import Abstract.TransportnieSredstvaPerevoziyshieGruzi;
+import Interface.ImeetKolesa;
+
 public class Gruzovik extends TransportnieSredstvaPerevoziyshieGruzi implements ImeetKolesa {
-    private int kolichestvoKoles;
+    private final int kolichestvoKoles;
 
     public Gruzovik(String model, String proizvoditel, int kolichestvoKoles) {
         super(model, proizvoditel);
         this.kolichestvoKoles = kolichestvoKoles;
-    }
-
-    @Override
-    public int getKolichestvoKoles() {
-        return kolichestvoKoles;
     }
 
     @Override

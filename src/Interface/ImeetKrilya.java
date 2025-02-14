@@ -1,3 +1,4 @@
+package Interface;
+
 public interface ImeetKrilya {
-    double getRazmahKrilev();
 }

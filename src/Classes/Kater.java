@@ -1,14 +1,14 @@
+package Classes;
+
+import Abstract.TransportnieSredstvaPerevoziyshieGruzi;
+import Interface.ImeetVint;
+
 public class Kater extends TransportnieSredstvaPerevoziyshieGruzi implements ImeetVint {
-    private int kolichestvoVintov;
+    private final int kolichestvoVintov;
 
     public Kater(String model, String proizvoditel, int kolichestvoVintov) {
         super(model, proizvoditel);
         this.kolichestvoVintov = kolichestvoVintov;
-    }
-
-    @Override
-    public int getKolichestvoVintov() {
-        return kolichestvoVintov;
     }
 
     @Override

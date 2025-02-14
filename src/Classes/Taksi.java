@@ -1,14 +1,14 @@
+package Classes;
+
+import Abstract.TransportnoeSredstvo;
+import Interface.ImeetKolesa;
+
 public class Taksi extends TransportnoeSredstvo implements ImeetKolesa {
-    private int kolichestvoKoles;
+    private final int kolichestvoKoles;
 
     public Taksi(String model, String proizvoditel, int kolichestvoKoles) {
         super(model, proizvoditel);
         this.kolichestvoKoles = kolichestvoKoles;
-    }
-
-    @Override
-    public int getKolichestvoKoles() {
-        return kolichestvoKoles;
     }
 
     @Override
@@ -21,6 +21,7 @@ public class Taksi extends TransportnoeSredstvo implements ImeetKolesa {
         System.out.println("Двигатель такси остановлен.");
     }
 
+    @Override
     public String toString() {
         return "Такси: [" + super.toString() + ", колеса: " + kolichestvoKoles + "]";
     }

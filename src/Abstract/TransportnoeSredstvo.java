@@ -1,18 +1,12 @@
-abstract class TransportnoeSredstvo {
-    private String model;
-    private String proizvoditel;
+package Abstract;
 
-    public TransportnoeSredstvo(String model, String proizvoditel) {
+public abstract class TransportnoeSredstvo {
+    private final String model;
+    private final String proizvoditel;
+
+    protected TransportnoeSredstvo(String model, String proizvoditel) {
         this.model = model;
         this.proizvoditel = proizvoditel;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getProizvoditel() {
-        return proizvoditel;
     }
 
     public abstract void startEngine();

@@ -1,21 +1,17 @@
+package Classes;
+
+import Abstract.TransportnieSredstvaPerevoziyshieGruzi;
+import Interface.ImeetKolesa;
+import Interface.ImeetVint;
+
 public class Vertolet extends TransportnieSredstvaPerevoziyshieGruzi implements ImeetKolesa, ImeetVint {
-    private int kolichestvoKoles;
-    private int kolichestvoVintov;
+    private final int kolichestvoKoles;
+    private final int kolichestvoVintov;
 
     public Vertolet(String model, String proizvoditel, int kolichestvoKoles, int kolichestvoVintov) {
         super(model, proizvoditel);
         this.kolichestvoKoles = kolichestvoKoles;
         this.kolichestvoVintov = kolichestvoVintov;
-    }
-
-    @Override
-    public int getKolichestvoKoles() {
-        return kolichestvoKoles;
-    }
-
-    @Override
-    public int getKolichestvoVintov() {
-        return kolichestvoVintov;
     }
 
     @Override

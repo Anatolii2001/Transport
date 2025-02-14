@@ -1,28 +1,20 @@
+package Classes;
+
+import Abstract.TransportnieSredstvaPerevoziyshieGruzi;
+import Interface.ImeetKolesa;
+import Interface.ImeetKrilya;
+import Interface.ImeetVint;
+
 public class Samolet extends TransportnieSredstvaPerevoziyshieGruzi implements ImeetKolesa, ImeetVint, ImeetKrilya {
-    private int kolichestvoKoles;
-    private int kolichestvoVintov;
-    private double razmahKrilev;
+    private final int kolichestvoKoles;
+    private final int kolichestvoVintov;
+    private final double razmahKrilev;
 
     public Samolet(String model, String proizvoditel, int kolichestvoKoles, int kolichestvoVintov, double razmahKrilev) {
         super(model, proizvoditel);
         this.kolichestvoKoles = kolichestvoKoles;
         this.kolichestvoVintov = kolichestvoVintov;
         this.razmahKrilev = razmahKrilev;
-    }
-
-    @Override
-    public int getKolichestvoKoles() {
-        return kolichestvoKoles;
-    }
-
-    @Override
-    public int getKolichestvoVintov() {
-        return kolichestvoVintov;
-    }
-
-    @Override
-    public double getRazmahKrilev() {
-        return razmahKrilev;
     }
 
     @Override

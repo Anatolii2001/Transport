@@ -1,3 +1,4 @@
+package Classes;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,35 +13,34 @@ public class Main {
 
         System.out.println(samolet);
         samolet.startEngine();
-//        samolet.zagruzkaGruza("Electronics");
         samolet.vigruzkaGruza();
         samolet.stopEngine();
         System.out.println();
 
         System.out.println(vertolet);
         vertolet.startEngine();
-        vertolet.zagruzkaGruza("Medical Supplies");
+        vertolet.zagruzkaGruza("Медицинское оборудование");
         vertolet.vigruzkaGruza();
         vertolet.stopEngine();
         System.out.println();
 
         System.out.println(kater);
         kater.startEngine();
-        kater.zagruzkaGruza("Champagne");
+        kater.zagruzkaGruza("Морепродукты");
         kater.vigruzkaGruza();
         kater.stopEngine();
         System.out.println();
 
         System.out.println(tanker);
         tanker.startEngine();
-        tanker.zagruzkaGruza("Crude Oil");
+        tanker.zagruzkaGruza("Нефть");
         tanker.vigruzkaGruza();
         tanker.stopEngine();
         System.out.println();
 
         System.out.println(gruzovik);
         gruzovik.startEngine();
-        gruzovik.zagruzkaGruza("Construction Materials");
+        gruzovik.zagruzkaGruza("Цифровая техника");
         gruzovik.vigruzkaGruza();
         gruzovik.stopEngine();
         System.out.println();

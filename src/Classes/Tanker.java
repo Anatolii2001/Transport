@@ -1,3 +1,5 @@
+package Classes;
+
 public class Tanker extends Kater {
     public Tanker(String model, String proizvoditel, int kolichestvoVintov) {
         super(model, proizvoditel, kolichestvoVintov);
