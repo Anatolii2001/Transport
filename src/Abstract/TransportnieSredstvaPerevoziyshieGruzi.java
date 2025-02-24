@@ -2,6 +2,8 @@ package Abstract;
 
 import Interface.PerevozchikGruza;
 
+import java.util.Objects;
+
 public abstract class TransportnieSredstvaPerevoziyshieGruzi extends TransportnoeSredstvo implements PerevozchikGruza {
     private String tekushiyPerevozchik;
 
@@ -26,4 +28,17 @@ public abstract class TransportnieSredstvaPerevoziyshieGruzi extends Transportno
         }
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        if (!super.equals(obj)) return false;
+        TransportnieSredstvaPerevoziyshieGruzi that = (TransportnieSredstvaPerevoziyshieGruzi) obj;
+        return Objects.equals(tekushiyPerevozchik, that.tekushiyPerevozchik);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), tekushiyPerevozchik);
+    }
 }
